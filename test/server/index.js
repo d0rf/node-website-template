@@ -10,7 +10,7 @@ var config = require('../../config/test.js');
 test('/health returns 200', function (t) {
   t.plan(1);
 
-  http.get('http://localhost:3000', function(res) {
+  http.get('http://localhost:80', function(res) {
     t.equal(res.statusCode, 200)
   }).on('error', function(e) {
     console.log('Got error: ' + e.message);

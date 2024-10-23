@@ -12,6 +12,6 @@ COPY . .
 RUN npm run watchify &
 
 # Exposer le port 80 pour Nginx
-EXPOSE 3000
+EXPOSE 80
 
 CMD ["npm", "start"]
